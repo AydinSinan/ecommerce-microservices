@@ -1,16 +1,43 @@
-# Compiled class file
+# ---- Java ----
 *.class
-
-# Log file
 *.log
+hs_err_pid*
+replay_pid*
 
-# BlueJ files
-*.ctxt
+# ---- Build outputs ----
+target/
+build/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# ---- Maven ----
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+# Exclude everything else under .mvn if present
+.mvn/**/*
+!.mvn/wrapper/**
 
-# Package Files #
+# ---- Maven Wrapper Scripts ----
+!mvnw
+!mvnw.cmd
+
+# ---- IDE ----
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# ---- OS specific ----
+.DS_Store
+Thumbs.db
+
+# ---- Archives ----
 *.jar
 *.war
 *.nar
@@ -19,6 +46,6 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# ---- Misc ----
+.mtj.tmp/
+
